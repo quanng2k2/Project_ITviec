@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 14 */
+.btn-14 {
+  background: rgb(243, 14, 14);
+  font-weight: 800;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  z-index: 1;
+  position: relative; /* Thêm thuộc tính này để tạo vùng chứa cho pseudo-element */
+  overflow: hidden; /* Ẩn phần nền sau vùng chứa */
+  color: #fff; /* Mặc định màu chữ */
+  cursor: pointer; /* Con trỏ chuột biểu thị nút có thể nhấp */
+  padding: 10px 20px; /* Kích thước nút */
+  font-size: 14px;
+}
+
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #61eb37;
+  background-image: linear-gradient(315deg, #3fe430 0%, #46d825 74%);
+
+  /* Sửa: thêm thuộc tính transition để tạo hiệu ứng chuyển đổi mượt mà */
+  transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+  color: #000;
+}
+
+/* Sửa: Di chuyển hover effect vào pseudo-element */
+.btn-14:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.btn-14:active {
+  top: 2px;
+}
+
+.button-delete {
+  height: 41px;
+}

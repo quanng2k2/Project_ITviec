@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-infor-user {
+  flex: 4;
+  font-family: system-ui;
+  padding: 20px 20px 0 20px;
+  height: 100vh;
+  overflow-y: auto;
+  height: 100vh;
+}
